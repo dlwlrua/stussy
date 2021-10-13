@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  overflow-x: hidden;
+}
+.wrap {
+  width: 100%;
+}
+header,
+section,
+footer,
+div {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+header {
+  height: 80px;
+  padding: 3vw 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header .logo {
+  width: 20vw;
+}
+header .menu_btn {
+  width: 7vw;
+  padding-top: 2.5vw;
+  margin-right: 2.5vw;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: lightcoral;
+  --swiper-navigation-size: 30px;
+}
+.photo > h1 {
+  width: 30vw;
+  text-align: center;
+  margin: 10vw auto 5vw;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+}
+.photo ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+.photo ul li {
+  width: 50vw;
+  padding: 5vw;
+  text-align: center;
+  font-size: 2.4vw;
+  box-sizing: border-box;
+}
+.photo ul li h1 {
+  font-size: 3vw;
+}
+.photo ul li p {
+  font-size: 2vw;
+  margin-top: 2vw;
+  font-weight: bold;
+}
+.movie {
+  margin: 10vw 0;
+}
+.movie h1 {
+  width: 33vw;
+  text-align: center;
+  margin: 0 auto 5vw;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+}
+.movie iframe {
+  width: 100%;
+}
+.movie_wrap {
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.movie_wrap iframe,
+.movie_wrap .object,
+.movie_wrap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+footer {
+  height: 270px;
+  padding: 7vw 0 0;
+  text-align: center;
+  font-size: 3vw;
+  line-height: 5vw;
+}
+footer .sns {
+  width: 30vw;
+  margin: 0 auto 3vw;
+  float: none;
+}
+footer .sns ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .sns ul li {
+  width: 7vw;
+}
+footer address {
+  width: 100%;
+  clear: both;
+  font-style: normal;
+  color: #999;
+  margin-bottom: 3vw;
+}
+footer p {
+  font-weight: bold;
+}
+.main_icon {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #efefef;
+  z-index: 100;
+}
+.main_icon ul {
+  display: flex;
+  justify-content: space-around;
+}
+.main_icon ul li {
+  width: 5vw;
+  padding: 2vw 5vw;
+  text-align: center;
+}
+.menu {
+  position: absolute;
+  width: 50vw;
+  right: -100vw;
+  top: 0;
+  height: 100vh;
+  background-color: #333;
+  z-index: 100;
+  padding: 10vw;
+}
+.menu .close {
+  width: 5vw;
+  position: absolute;
+  top: 6vw;
+  right: 4vw;
+}
+.menu nav {
+  margin-top: 5vw;
+}
+.menu nav ul li a {
+  color: #fff;
+  font-size: 4vw;
+  padding: 1vw;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.menu nav ul li a.active {
+  color: lightcoral;
+  opacity: 1;
+}
+.menu nav .sub {
+  display: none;
+}
+.menu nav .sub li a {
+  margin-left: 5vw;
+  opacity: 0.5;
+  padding: 1vw;
+  font-size: 3.5vw;
+  font-weight: normal;
+}
