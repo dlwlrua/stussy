@@ -48,6 +48,7 @@ header .menu_btn {
 }
 .swiper-button-next,
 .swiper-button-prev {
+  text-indent: -9999px;
   color: lightcoral;
   --swiper-navigation-size: 30px;
 }
